@@ -40,7 +40,7 @@ export function AboutPage() {
         <h2>About the Author</h2>
         <h3>Andrew J. Page</h3>
         <p className="about-role">
-          Director of Informatics, Quadram Institute Bioscience
+          CTO, Origin Sciences
         </p>
         <div className="about-links">
           <a
