@@ -867,3 +867,9 @@
 .tab:hover, .tab-active { color: var(--gx-nav-text); }
 .run-button { color: var(--gx-text-inverted); }
 .log-body { background: var(--gx-code-bg); font-size: 14px; }
+/* Match chart labels and native selectors to the active palette. */
+.recharts-cartesian-axis-tick-value { fill: var(--gx-text-muted); }
+.recharts-cartesian-grid line { stroke: var(--gx-border); }
+.recharts-default-tooltip { background-color: var(--gx-surface) !important; border-color: var(--gx-border) !important; }
+.recharts-tooltip-label { color: var(--gx-text); }
+.viz-panel select { background: var(--gx-surface); color: var(--gx-text); border-color: var(--gx-border); font-family: var(--gx-font-sans); }
