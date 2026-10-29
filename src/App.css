@@ -187,7 +187,7 @@
   padding: 0.2rem 0.65rem;
   border-radius: 20px;
   font-size: 0.8rem;
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--gx-font-mono);
   color: var(--gx-tag-text);
 }
 
@@ -239,24 +239,25 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
-  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.3);
+  box-shadow: 0 2px 8px var(--gx-accent-dim);
 }
 
 .run-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.4);
+  box-shadow: 0 4px 16px var(--gx-accent-dim);
 }
 
 .run-button:active:not(:disabled) {
   transform: translateY(0);
-  box-shadow: 0 1px 4px rgba(13, 148, 136, 0.3);
+  box-shadow: 0 1px 4px var(--gx-accent-dim);
 }
 
 .run-button:disabled {
-  background: var(--gx-accent);
+  background: var(--gx-disabled-bg);
+  color: var(--gx-disabled-text);
   cursor: not-allowed;
   box-shadow: none;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .export-button {
@@ -329,7 +330,7 @@
   margin: 0.6rem 0 0;
   font-size: 0.8rem;
   color: var(--gx-text-muted);
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--gx-font-mono);
 }
 
 /* ── Error ───────────────────────────────────── */
@@ -415,7 +416,7 @@
 }
 
 .results-table .filename-cell {
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--gx-font-mono);
   font-size: 0.82rem;
   color: var(--gx-text);
 }
@@ -423,7 +424,7 @@
 /* Allele/ST badges */
 .st-cell,
 .allele-cell {
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--gx-font-mono);
   font-size: 0.82rem;
 }
 
@@ -585,7 +586,7 @@
 
 .tree-button:hover:not(:disabled) {
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.3);
+  box-shadow: 0 2px 8px var(--gx-accent-dim);
 }
 
 .tree-button:disabled {
@@ -658,7 +659,7 @@
 .log-count {
   font-size: 0.8rem;
   color: var(--gx-text-muted);
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--gx-font-mono);
 }
 
 .copy-log-button {
@@ -686,7 +687,7 @@
   border: 1px solid var(--gx-border);
   border-radius: var(--gx-radius);
   padding: 0.75rem;
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: var(--gx-font-mono);
   font-size: 0.78rem;
   line-height: 1.6;
 }
@@ -835,7 +836,7 @@
   border-radius: var(--gx-radius-sm);
   background: var(--gx-bg);
   color: var(--gx-text);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--gx-font-mono);
   font-size: 0.85rem;
 }
 
@@ -859,3 +860,10 @@
     grid-column: 1;
   }
 }
+
+/* Shared palette applied without changing the original navigation geometry. */
+.tab-bar { background: var(--gx-nav-bg); }
+.tab { color: var(--gx-nav-muted); line-height: 17px; }
+.tab:hover, .tab-active { color: var(--gx-nav-text); }
+.run-button { color: var(--gx-text-inverted); }
+.log-body { background: var(--gx-code-bg); font-size: 14px; }

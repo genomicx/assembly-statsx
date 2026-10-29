@@ -2,6 +2,8 @@
 
 Browser-based genome assembly quality statistics — a client-side reimplementation of the [Sanger Pathogens assembly-stats CLI](https://github.com/sanger-pathogens/assembly-stats) with interactive visualisations and multi-file comparison.
 
+[Open assembly-statsx](https://assembly-statsx.genomicx.org)
+
 ## Features
 
 - **Multi-file comparison** — drop in up to 5 assemblies and compare side-by-side
@@ -53,4 +55,10 @@ src/
 
 ## Part of GenomicX
 
-This app is part of the [GenomicX](https://genomicx.github.io) suite of browser-based bioinformatics tools.
+This app is part of the [GenomicX](https://genomicx.org) suite of browser-based bioinformatics tools.
+
+## Hosting
+
+Hosted on Cloudflare Pages at https://assembly-statsx.genomicx.org.
+Use Node 24, `npm install`, and `npm run build`; the static output is `dist`.
+The shared `@genomicx/ui` tokens bundle IBM Plex fonts locally.

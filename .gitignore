@@ -34,3 +34,7 @@ yarn-error.log*
 # Coverage
 coverage/
 .nyc_output/
+
+# Cloudflare installs with the configured Node/npm runtime
+package-lock.json
+.wrangler/
